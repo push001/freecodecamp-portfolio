@@ -57,7 +57,17 @@ function loadprogress(element, color, value) {
     bar.animate(value); // Number from 0.0 to 1.0
 }
 
-loadprogress(progresshtml, "#EC662B", 0.65);
-loadprogress(progresscss, "#1572B6", 0.65);
-loadprogress(progressjs, "#F0DB4F", 0.45);
-loadprogress(progressjava, "#5382A1", 0.35);
+loadprogress(progressjava, "#5382A1", 0.60);
+loadprogress(progresspython, "#8B008B", 0.50);
+loadprogress(progressc, "#D2691E",0.50);
+
+loadprogress(progresshtml, "#EC662B", 0.40);
+loadprogress(progresscss, "#1572B6", 0.35);
+loadprogress(progressflask, "#000000",0.35);
+
+loadprogress(progressoracle, "#8B008B",0.35);
+loadprogress(progressmongodb, "#8b4513",0.35);
+
+
+loadprogress(progressgit, "#000080",0.50);
+
