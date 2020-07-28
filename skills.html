@@ -4,6 +4,12 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
@@ -11,18 +17,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/2.4.2/isInViewport.js"></script>
-
-
-    
     <link rel="stylesheet" href="portfolio.css">
+
+    <script> 
+        $(function()
+        {
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+    
+    
 
 	<title>My skills</title>
 </head>
 <body>
+<div id="header"></div>
+
+<br/>
+<br/>
+<br/>
 <div class="container" id="skills">
         <div class="row ">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                <h2 class="bluegrey p-3"><b>My Skills</b></h2>
+                <h1 class="bluegrey p-3"><b>My Skills</b></h1>
             </div>
 
 <!-- Problem Solving-->
@@ -113,7 +131,11 @@
         </div>
 
     </div>
+<br/>
+<br/>
+<br/>
 
+<div id="footer"></div>
 </body>
 <script src="portfolio.js"></script>
 </html>
